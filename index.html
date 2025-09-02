@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #FFB347, #FF914D, #FF6F3C, #FF9F68);
+      background-size: 600% 600%;
+      animation: gradientShift 20s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    /* rarebeans glow that reacts with background */
+    .highlight {
+      font-weight: bold;
+      color: #fff;
+      animation: rareGlow 6s ease-in-out infinite;
+    }
+
+    @keyframes rareGlow {
+      0%   { text-shadow: 0 0 8px #FFB347, 0 0 16px #FF914D; }
+      25%  { text-shadow: 0 0 8px #FF914D, 0 0 16px #FF6F3C; }
+      50%  { text-shadow: 0 0 8px #FF6F3C, 0 0 16px #FF9F68; }
+      75%  { text-shadow: 0 0 8px #FF9F68, 0 0 16px #FFB347; }
+      100% { text-shadow: 0 0 8px #FFB347, 0 0 16px #FF914D; }
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(255,255,255,0.25); /* soft edge glow */
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(255,255,255,0.5);
+    }
+
+    /* Brand gradient backgrounds */
+    .tiktok {
+      background: linear-gradient(135deg, #000000, #ff0050, #00f2ea);
+    }
+
+    .youtube {
+      background: linear-gradient(135deg, #ff0000, #cc0000, #990000);
+    }
+
+    .discord {
+      background: linear-gradient(135deg, #5865F2, #4752C4, #23272A);
+    }
+
+    .gaming {
+      background: linear-gradient(135deg, #0e4d2d, #16a34a, #22c55e);
+    }
+
+    .twitch {
+      background: linear-gradient(135deg, #9146FF, #772ce8, #5a1fa6);
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi, I’m <span class="highlight">rarebeans</span></h1>
+  <div class="buttons">
+    <a href="https://www.tiktok.com/@leevbnam" target="_blank" class="btn tiktok"><i class="fab fa-tiktok"></i>TikTok</a>
+    <a href="https://www.youtube.com/@rarebeans" target="_blank" class="btn youtube"><i class="fab fa-youtube"></i>YouTube</a>
+    <a href="https://discord.com/users/918725409753948160" target="_blank" class="btn discord"><i class="fab fa-discord"></i>Discord</a>
+    <a href="https://discord.gg/TtXFpGDUdT" target="_blank" class="btn gaming"><i class="fas fa-gamepad"></i>Gaming</a>
+    <a href="https://twitch.tv/copyrightedbeans" target="_blank" class="btn twitch"><i class="fab fa-twitch"></i>Twitch</a>
+  </div>
+</body>
+</html>
